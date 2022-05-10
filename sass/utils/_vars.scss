@@ -1,0 +1,48 @@
+$fontFamilies: (
+  'main': 'Roboto',
+  'secondary': 'Raleway',
+);
+$fontFamilyFallback: sans-serif;
+
+$fontWeights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': 900,
+);
+
+$colorPalette: (
+  'accent': (
+    'dark': #000,
+    'light': #2196f3,
+  ),
+  'background': (
+    // $hero-background-color: #c4c4c4;
+    'additional': #c4c4c4,
+    'dark': #2f303a,
+    'light': #f5f4fa,
+  ),
+  'icons': (
+    'main': #afb1b8,
+    // $icons-logo-secondary-color: #fff;
+  ),
+  'primary': (
+    // $secondary-dark-color: #757575;
+    'additional': #757575,
+    'dark': #212121,
+    'light': #fff,
+  ),
+);
+
+// $background-dark-color-opaque: #2f303acc;
+// $accent-light-color-opaque: #2196f3e5;
+// $button-big-hover-color: #188ce8;
+
+$transitionData: (
+  'time': 250ms,
+  'timeFunction': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+$containerWidth: 1200px;
+$itemsDefaultMargin: 30px;
+$sectionsDefaultTBPaddings: 94px;
