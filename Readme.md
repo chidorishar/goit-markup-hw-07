@@ -1,1 +1,1 @@
-[link to project live page](https://chidorishar.github.io/goit-markup-hw-06/)
+[link to project live page](https://chidorishar.github.io/goit-markup-hw-07/)
