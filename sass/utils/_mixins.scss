@@ -1,0 +1,19 @@
+@import './vars';
+
+@function getColorFromPalette($group, $type) {
+  $subMap: map-get($colorPalette, $group);
+
+  @return map-get($subMap, $type);
+}
+
+@function getFontWeight($name) {
+  @return map-get($fontWeights, $name);
+}
+
+@function getFontFamily($name) {
+  @return map-get($fontFamilies, $name) #{', '} #{$fontFamilyFallback};
+}
+
+@function getTransitionData($dataName) {
+  @return map-get($transitionData, $dataName);
+}
