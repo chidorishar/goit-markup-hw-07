@@ -1,0 +1,9 @@
+@import './utils/vars' @import './components/header' %brr {
+  color: tomato;
+}
+
+$papa: #{%brr};
+
+.test2 {
+  color: $papa;
+}
