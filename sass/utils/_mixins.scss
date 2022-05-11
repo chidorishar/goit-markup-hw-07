@@ -1,5 +1,3 @@
-@import '../components/common';
-
 @mixin flex-grid-container($marginTop, $marginLeft, $allowWarp: false) {
   display: flex;
 
