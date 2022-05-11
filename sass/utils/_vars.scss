@@ -13,6 +13,8 @@ $fontWeights: (
 
 $colorPalette: (
   'accent': (
+    // $button-big-hover-color: #188ce8;
+    'additional': #188ce8,
     'dark': #000,
     'light': #2196f3,
   ),
@@ -36,7 +38,6 @@ $colorPalette: (
 
 // $background-dark-color-opaque: #2f303acc;
 // $accent-light-color-opaque: #2196f3e5;
-// $button-big-hover-color: #188ce8;
 
 $transitionData: (
   'time': 250ms,
