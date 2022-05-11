@@ -139,6 +139,31 @@
   padding-bottom: $sectionsDefaultTBPaddings;
 }
 
+.socials {
+  @include flex-grid-container(10px, 10px, true);
+  @extend %unmarked-list;
+}
+
+.socials__social {
+  @include flex-grid-item(10px, 10px, 44px, 44px, false);
+}
+
+.socials__link {
+  @extend %flex, %flex--vh-centred;
+  @extend %icon;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  transition: createTransitionFor('background-color' 'color');
+
+  &:hover,
+  &:focus {
+    background-color: getColorFromPalette('accent', 'light');
+  }
+}
+
 %title {
   font-weight: var(--font-bold);
   font-size: 36px;
