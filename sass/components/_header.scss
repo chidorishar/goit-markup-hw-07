@@ -28,8 +28,8 @@
   color: getColorFromPalette('primary', 'dark');
 }
 
-.header__pages-item:not(:last-child),
-.header__contacts-item:not(:last-child) {
+.header__page:not(:last-child),
+.header__contact:not(:last-child) {
   margin-right: 50px;
 }
 
