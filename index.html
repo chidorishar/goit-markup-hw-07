@@ -22,6 +22,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <!-- JS -->
     <script src="./js/script.js" defer></script>
   </head>
@@ -29,40 +30,43 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container flex-vh-centred">
+      <div class="header__container container">
         <!-- NAVIGATION -->
-        <nav class="header-nav flex-vh-centred">
-          <a class="logo link-clean" href="./index.html" lang="en"
-            ><span class="text-accent-light-color">Web</span>Studio</a
-          >
-          <ul class="list-pages list-unmarked flex-vh-centred">
-            <li class="item studio-page">
-              <a class="nav-active-page link-clean link-interactive" href="./index.html">Студия</a>
+        <nav class="header__nav">
+          <a class="header__logo logo" href="./index.html" lang="en">
+            Web<span class="logo__second-word">Studio</span>
+          </a>
+          <ul class="header__pages">
+            <li class="header__pages-item">
+              <a class="header__page-link header__page-link--active-page" href="./index.html"
+                >Студия</a
+              >
             </li>
 
-            <li class="item portfolio-page">
-              <a class="link-clean link-interactive" href="./portfolio.html">Портфолио</a>
+            <li class="header__pages-item">
+              <a class="header__page-link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item contacts-page">
-              <a class="link-clean link-interactive" href="">Контакты</a>
+
+            <li class="header__pages-item">
+              <a class="header__page-link" href="./">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <!-- CONTACTS -->
-        <ul class="list-contacts list-unmarked flex-vh-centred">
-          <li class="item">
-            <a class="mail-link link-clean link-interactive" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="icon">
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a class="header__contact-link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="header__contact-icon">
                 <use href="./images/decoration/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="item">
-            <a class="phone-link link-clean link-interactive" href="tel:+380961111111">
-              <svg width="10" height="16" class="icon">
+          <li class="header__contacts-item">
+            <a class="header__contact-link" href="tel:+380961111111">
+              <svg width="10" height="16" class="header__contact-icon">
                 <use href="./images/decoration/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11
