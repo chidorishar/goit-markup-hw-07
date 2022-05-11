@@ -26,20 +26,49 @@
   }
 }
 
+%clean-link {
+  text-decoration: none;
+  font-style: normal;
+
+  // color: currentColor;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+%clean-link--interactive {
+  transition: createTransitionFor('color');
+
+  &:hover,
+  &:focus {
+    color: getColorFromPalette('accent', 'light');
+  }
+}
+
 .container {
   width: $containerWidth;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-%flex-vh-centred {
+%flex {
   display: flex;
-  align-items: center;
+}
+
+%flex--h-centred {
+  @extend %flex;
   justify-content: center;
 }
 
-%flex-h-centred {
-  display: flex;
+%flex--v-centred {
+  @extend %flex;
+  align-items: center;
+}
+
+%flex--vh-centred {
+  @extend %flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -51,9 +80,11 @@
   transition: createTransitionFor('border-color');
 }
 
-%interactive-icon {
+%icon {
   fill: currentColor;
+}
 
+%icon--interactive {
   transition: createTransitionFor('color');
 }
 
@@ -62,6 +93,7 @@
 }
 
 .logo {
+  @extend %clean-link;
   font-family: getFontFamily('secondary');
   font-weight: getFontWeight('bold');
   font-size: 26px;
@@ -98,30 +130,6 @@
   }
 }
 
-%list-unmarked {
-  list-style: none;
-}
-
-%link-clean {
-  text-decoration: none;
-  font-style: normal;
-
-  color: inherit;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-%link-clean--interactive {
-  transition: createTransitionFor('color');
-
-  &:hover,
-  &:focus {
-    color: getColorFromPalette('accent', 'light');
-  }
-}
-
 %section {
   padding-top: $sectionsDefaultTBPaddings;
   padding-bottom: $sectionsDefaultTBPaddings;
@@ -136,6 +144,10 @@
   margin-bottom: 50px;
 
   color: getColorFromPalette('primary', 'dark');
+}
+
+%unmarked-list {
+  list-style: none;
 }
 
 %visually-hidden {
