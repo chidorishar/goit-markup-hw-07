@@ -34,8 +34,7 @@
 }
 
 .header__page-link {
-  @extend %clean-link;
-  @extend %clean-link--interactive;
+  @extend %clean-link, %clean-link--interactive;
 }
 
 .header__page-link--active-page {
@@ -70,8 +69,7 @@
 
 .header__contact-link {
   @extend %flex--v-centred;
-  @extend %clean-link;
-  @extend %clean-link--interactive;
+  @extend %clean-link, %clean-link--interactive;
 
   white-space: nowrap;
 }
