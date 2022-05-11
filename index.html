@@ -682,18 +682,17 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
-        <div class="address-container">
-          <a class="logo link-clean" href="./index.html" lang="en"
-            ><span class="text-accent-light-color">Web</span
-            ><span class="text-accent-light">Studio</span></a
-          >
+      <div class="footer__container container">
+        <div class="footer__studio-info">
+          <a class="footer__logo logo" href="./index.html" lang="en">
+            Web<span class="logo__second-word--light">Studio</span>
+          </a>
 
-          <address class="address-footer">
-            <ul class="addresses-list list-unmarked">
-              <li class="item address-geo">
+          <address class="footer__addresses">
+            <ul class="footer__addresses-list">
+              <li class="footer__address">
                 <a
-                  class="link-clean link-interactive text-accent-light"
+                  class="footer__address-link"
                   href="https://tinyurl.com/yckhjt74"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -701,33 +700,29 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="item address-mail">
-                <a class="link-clean link-interactive" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="footer__address">
+                <a class="footer__address-link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="item address-phone">
-                <a class="link-clean link-interactive" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer__address">
+                <a class="footer__address-link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="follow-us-container">
-          <h2 class="subtitle">Присоединяйтесь</h2>
-          <ul class="list-socials list-unmarked">
-            <li class="item">
+        <div class="footer__follow-us">
+          <h2 class="footer__follow-subtitle">Присоединяйтесь</h2>
+          <ul class="socials">
+            <li class="socials__social">
               <a
                 href="https://www.instagram.com"
-                class="link-clean"
+                class="socials__link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ссылка на аккаунт в инстаграме"
               >
                 <svg
-                  class="icon"
+                  class="socials__icon"
                   width="20"
                   height="20"
                   aria-label="Ссылка на аккаунт в инстаграме"
@@ -736,41 +731,41 @@
                 </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="socials__social">
               <a
                 href="https://www.twitter.com"
-                class="link-clean"
+                class="socials__link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ссылка на аккаунт в твиттере"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./images/decoration/icons.svg#logo-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="socials__social">
               <a
                 href="https://www.facebook.com"
-                class="link-clean"
+                class="socials__link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ссылка на аккаунт в фейсбуке"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./images/decoration/icons.svg#logo-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
+            <li class="socials__social">
               <a
                 href="https://www.linkedin.com"
-                class="link-clean"
+                class="socials__link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ссылка на аккаунт в линкедине"
               >
-                <svg class="icon" width="20" height="20">
+                <svg class="socials__icon" width="20" height="20">
                   <use href="./images/decoration/icons.svg#logo-linkedin"></use>
                 </svg>
               </a>
@@ -778,19 +773,19 @@
           </ul>
         </div>
 
-        <form class="form-subscribe" name="form-subscribe">
-          <h2 class="subtitle">Подпишитесь на рассылку</h2>
+        <form class="footer__subscribe" name="form-subscribe">
+          <h2 class="footer__subscribe-subtitle">Подпишитесь на рассылку</h2>
           <input
-            class="input-email input-text"
+            class="footer__mail-input"
             name="email"
             type="email"
             placeholder="E-mail"
             aria-label="поле ввода электронной почты"
             required
           />
-          <button class="button-send button-big button flex-vh-centred" type="submit">
+          <button class="footer__button-send button-big button flex-vh-centred" type="submit">
             Подписаться
-            <svg class="icon" width="24" height="24">
+            <svg class="footer__button-icon" width="24" height="24">
               <use href="./images/decoration/icons.svg#paperplane"></use>
             </svg>
           </button>
