@@ -1,19 +1,32 @@
-@import './vars';
+@import '../components/common';
 
-@function getColorFromPalette($group, $type) {
-  $subMap: map-get($colorPalette, $group);
+@mixin flex-grid-container($marginTop, $marginLeft, $allowWarp: false) {
+  display: flex;
 
-  @return map-get($subMap, $type);
+  @if $allowWarp {
+    flex-wrap: wrap;
+  }
+  margin-top: -1 * $marginTop;
+  margin-left: -1 * $marginLeft;
 }
 
-@function getFontWeight($name) {
-  @return map-get($fontWeights, $name);
-}
+@mixin flex-grid-item(
+  $marginTop,
+  $marginLeft,
+  $allowResize: false,
+  $quantityInRow: 0,
+  $width: 0px,
+  $height: 0px
+) {
+  margin-top: $marginTop;
+  margin-left: $marginLeft;
 
-@function getFontFamily($name) {
-  @return map-get($fontFamilies, $name) #{', '} #{$fontFamilyFallback};
-}
-
-@function getTransitionData($dataName) {
-  @return map-get($transitionData, $dataName);
+  @if $allowResize {
+    flex-basis: calc(100% / ($quantityInRow - 1) - $marginLeft);
+    max-width: max-content;
+    min-width: min-content;
+  } @else {
+    width: $width;
+    height: $height;
+  }
 }
