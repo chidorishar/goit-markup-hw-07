@@ -11,10 +11,10 @@
 @mixin flex-grid-item(
   $marginTop,
   $marginLeft,
-  $allowResize: false,
-  $quantityInRow: 0,
   $width: 0px,
-  $height: 0px
+  $height: 0px,
+  $allowResize: false,
+  $quantityInRow: 0
 ) {
   margin-top: $marginTop;
   margin-left: $marginLeft;
