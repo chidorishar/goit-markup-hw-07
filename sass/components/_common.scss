@@ -62,12 +62,10 @@
 }
 
 %flex--v-centred {
-  @extend %flex;
   align-items: center;
 }
 
 %flex--vh-centred {
-  @extend %flex;
   align-items: center;
   justify-content: center;
 }
