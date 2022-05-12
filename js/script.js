@@ -1,9 +1,9 @@
 const filters = document.querySelectorAll('.list-filters .button');
 var selectedCards = document.querySelectorAll('.card');
-const modal = document.getElementById('modal-overlay');
+const modal = document.getElementById('modal');
 const modalControls = {
-  openModalBtn: document.getElementById('hero-button'),
-  closeModalBtn: document.getElementById('modal-button-close'),
+  openModalBtn: document.getElementById('section-hero__button'),
+  closeModalBtn: document.getElementById('modal__button-close'),
 };
 
 filters.forEach(f => f.addEventListener('click', onFiltersClick));
