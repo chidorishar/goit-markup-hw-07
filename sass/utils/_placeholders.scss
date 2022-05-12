@@ -122,7 +122,7 @@
 }
 
 %title {
-  font-weight: var(--font-bold);
+  font-weight: getFontWeight('bold');
   font-size: 36px;
   line-height: 1.17;
 
