@@ -9,7 +9,7 @@
 .section-regular-clients__clients {
   @extend %unmarked-list;
 
-  @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin);
+  @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin, true);
 }
 
 .section-regular-clients__client {
