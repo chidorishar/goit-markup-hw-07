@@ -87,11 +87,13 @@
 }
 
 %main-button {
-  font-weight: getFontFamily('bold');
+  font-weight: getFontWeight('bold');
   line-height: 1.875;
   letter-spacing: 0.06em;
 
-  padding: 10px 32px;
+  $p-t-b: 10px;
+  padding-top: $p-t-b;
+  padding-bottom: $p-t-b;
 
   background-color: getColorFromPalette('accent', 'light');
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
