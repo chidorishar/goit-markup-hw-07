@@ -3,7 +3,7 @@ var selectedCards = document.querySelectorAll('.card');
 const modal = document.getElementById('modal');
 const modalControls = {
   openModalBtn: document.getElementById('section-hero__button'),
-  closeModalBtn: document.getElementById('modal__button-close'),
+  closeModalBtn: document.getElementById('modal__close-button'),
 };
 
 filters.forEach(f => f.addEventListener('click', onFiltersClick));

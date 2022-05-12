@@ -117,7 +117,7 @@
 
 .footer__button-send {
   @extend %button;
-  @extend %main-button;
+  @extend %button--main;
   @extend %flex, %flex--v-centred;
 
   margin-bottom: 20px;
