@@ -45,7 +45,7 @@
 }
 
 .modal__close-button {
-  @extend %flex, %flex--vh-centred;
+  @extend %flex--vh-centred;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -80,7 +80,7 @@
 }
 
 .modal__request-form {
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
   flex-direction: column;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .modal__agree-label {
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
 
   text-align: left;
 
@@ -191,7 +191,7 @@
 }
 
 .modal__send-button {
-  @extend %button, %button--main;
+  @extend %button--main;
 
   padding-right: 55px;
   padding-left: 55px;

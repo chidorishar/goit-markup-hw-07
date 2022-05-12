@@ -24,6 +24,28 @@
   }
 }
 
+%button--main {
+  @extend %button;
+
+  font-weight: getFontWeight('bold');
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+
+  background-color: getColorFromPalette('accent', 'light');
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: getColorFromPalette('primary', 'light');
+
+  transition: createTransitionFor('background-color');
+
+  &:hover,
+  &:focus {
+    background-color: getColorFromPalette('accent', 'additional');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
 %clean-link {
   text-decoration: none;
   font-style: normal;
@@ -36,6 +58,8 @@
 }
 
 %clean-link--interactive {
+  @extend %clean-link;
+
   transition: createTransitionFor('color');
 
   &:hover,
@@ -50,14 +74,19 @@
 
 %flex--h-centred {
   @extend %flex;
+
   justify-content: center;
 }
 
 %flex--v-centred {
+  @extend %flex;
+
   align-items: center;
 }
 
 %flex--vh-centred {
+  @extend %flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -82,27 +111,9 @@
 }
 
 %icon--interactive {
+  @extend %icon;
+
   transition: createTransitionFor('color');
-}
-
-%button--main {
-  font-weight: getFontWeight('bold');
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-
-  padding: 10px 32px;
-
-  background-color: getColorFromPalette('accent', 'light');
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: getColorFromPalette('primary', 'light');
-
-  transition: createTransitionFor('background-color');
-
-  &:hover,
-  &:focus {
-    background-color: getColorFromPalette('accent', 'additional');
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
 
 %section {

@@ -38,7 +38,7 @@
 }
 
 .footer__address-link {
-  @extend %clean-link, %clean-link--interactive;
+  @extend %clean-link--interactive;
 }
 //#endregion INFO
 
@@ -116,9 +116,8 @@
 }
 
 .footer__button-send {
-  @extend %button;
   @extend %button--main;
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
 
   margin-bottom: 20px;
   $padding-r-l: 28px;

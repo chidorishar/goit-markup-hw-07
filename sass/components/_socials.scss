@@ -1,7 +1,3 @@
-// @import '../utils/functions';
-// @import '../utils/mixins';
-// @import '../utils/placeholders';
-
 .socials {
   @include flex-grid-container(10px, 10px, true);
   @extend %unmarked-list;
@@ -12,7 +8,7 @@
 }
 
 .socials__link {
-  @extend %flex, %flex--vh-centred;
+  @extend %flex--vh-centred;
   @extend %icon;
 
   width: 100%;

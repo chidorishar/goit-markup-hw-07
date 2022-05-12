@@ -7,11 +7,11 @@
 }
 
 .header__container {
-  @extend %flex, %flex--vh-centred;
+  @extend %flex--vh-centred;
 }
 
 .header__nav {
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
 }
 
 .header__logo {
@@ -20,7 +20,7 @@
 }
 
 .header__pages {
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
   @extend %unmarked-list;
 
   color: getColorFromPalette('primary', 'dark');
@@ -32,7 +32,7 @@
 }
 
 .header__page-link {
-  @extend %clean-link, %clean-link--interactive;
+  @extend %clean-link--interactive;
 }
 
 .header__page-link--active-page {
@@ -59,15 +59,15 @@
 }
 
 .header__contacts {
-  @extend %flex, %flex--v-centred;
+  @extend %flex--v-centred;
   @extend %unmarked-list;
 
   margin-left: auto;
 }
 
 .header__contact-link {
-  @extend %flex, %flex--v-centred;
-  @extend %clean-link, %clean-link--interactive;
+  @extend %flex--v-centred;
+  @extend %clean-link--interactive;
 
   white-space: nowrap;
 }
