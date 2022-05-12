@@ -82,31 +82,31 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button id="hero-button" class="section-hero__button" type="button">
+          <button id="section-hero__button" class="section-hero__button" type="button">
             Заказать услугу
           </button>
         </div>
 
         <!-- MODAL -->
-        <div id="modal-overlay" class="modal-overlay is-hidden">
-          <div class="window">
+        <div id="modal" class="modal is-hidden">
+          <div class="modal__overlay">
             <button
-              id="modal-button-close"
-              class="button-close flex-vh-centred"
+              id="modal__close-button"
+              class="modal__close-button"
               type="button"
               aria-label="Кнопка закрытия модального окна"
             >
-              <svg class="icon" width="18" height="18">
+              <svg class="modal__close-icon" width="18" height="18">
                 <use href="./images/decoration/icons.svg#close-cross"></use>
               </svg>
             </button>
-            <h2 class="subtitle">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="form-request" name="callback-request">
-              <ul class="list-fields list-unmarked">
-                <li class="field">
-                  <label class="label" for="request-name"> Имя </label>
+            <h2 class="modal__subtitle">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="modal__request-form" name="callback-request">
+              <ul class="modal__fields">
+                <li class="modal__field">
+                  <label class="modal__input-label" for="request-name"> Имя </label>
                   <input
-                    class="name input-text"
+                    class="name modal__input"
                     type="text"
                     name="name"
                     id="request-name"
@@ -114,45 +114,45 @@
                     autofocus
                     required
                   />
-                  <svg class="icon" width="18" height="18">
+                  <svg class="modal__input-icon" width="18" height="18">
                     <use href="./images/decoration/icons.svg#person"></use>
                   </svg>
                 </li>
 
-                <li class="field">
-                  <label class="label" for="request-phone"> Телефон </label>
+                <li class="modal__field">
+                  <label class="modal__input-label" for="request-phone"> Телефон </label>
                   <input
-                    class="phone input-text"
+                    class="phone modal__input"
                     type="tel"
                     name="phone"
                     id="request-phone"
                     placeholder=" "
                     required
                   />
-                  <svg class="icon" width="18" height="18">
+                  <svg class="modal__input-icon" width="18" height="18">
                     <use href="./images/decoration/icons.svg#old-phone"></use>
                   </svg>
                 </li>
 
-                <li class="field">
-                  <label class="label" for="request-mail"> Почта </label>
+                <li class="modal__field">
+                  <label class="modal__input-label" for="request-mail"> Почта </label>
                   <input
-                    class="mail input-text"
+                    class="mail modal__input"
                     type="email"
                     name="mail"
                     id="request-mail"
                     placeholder=" "
                     required
                   />
-                  <svg class="icon" width="18" height="18">
+                  <svg class="modal__input-icon" width="18" height="18">
                     <use href="./images/decoration/icons.svg#envelope-2"></use>
                   </svg>
                 </li>
 
-                <li class="field">
-                  <label class="label" for="request-comment"> Комментарий </label>
+                <li class="modal__field">
+                  <label class="modal__input-label" for="request-comment"> Комментарий </label>
                   <textarea
-                    class="commentary input-text"
+                    class="modal__input modal__input--commentary"
                     name="commentary"
                     id="request-comment"
                     placeholder="Введите текст"
@@ -162,20 +162,20 @@
                 </li>
               </ul>
 
-              <label class="label-agree">
+              <label class="modal__agree-label">
                 <input
-                  class="checkbox visually-hidden"
+                  class="modal__agree-checkbox"
                   type="checkbox"
                   name="checkbox-agree"
                   required
                 />
-                <svg class="icon" width="16" height="16">
+                <svg class="modal__agree-icon" width="16" height="16">
                   <use href="./images/decoration/icons.svg#check"></use>
                 </svg>
                 Соглашаюсь с рассылкой и принимаю&nbsp;
-                <a class="link-agreements" href="./">Условия договора</a>
+                <a class="modal__agreements-link" href="./">Условия договора</a>
               </label>
-              <button class="button-send button-big button" type="submit">Отправить</button>
+              <button class="modal__send-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
