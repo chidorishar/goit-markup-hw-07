@@ -36,14 +36,12 @@ $colorPalette: (
   ),
 );
 
-// $background-dark-color-opaque: #2f303acc;
-// $accent-light-color-opaque: #2196f3e5;
-
 $transitionData: (
   'time': 250ms,
   'timeFunction': cubic-bezier(0.4, 0, 0.2, 1),
 );
 
 $containerWidth: 1200px;
+$input-height: 40px; //needed for positioning input icon in request callback form
 $itemsDefaultMargin: 30px;
 $sectionsDefaultTBPaddings: 94px;
