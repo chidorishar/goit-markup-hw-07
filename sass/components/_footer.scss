@@ -1,6 +1,3 @@
-@import '../utils/functions', '../utils/placeholders';
-@import './common', './logo', './socials';
-
 .footer {
   padding: 60px 0;
 
@@ -119,11 +116,12 @@
 }
 
 .footer__button-send {
-  @extend %button, %main-button;
+  @extend %button;
+  @extend %main-button;
   @extend %flex, %flex--v-centred;
 
-  $padding-r-l: 20px;
   margin-bottom: 20px;
+  $padding-r-l: 28px;
   padding-right: $padding-r-l;
   padding-left: $padding-r-l;
 }

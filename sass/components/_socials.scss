@@ -1,6 +1,6 @@
-@import '../utils/functions';
-@import '../utils/mixins';
-@import '../utils/placeholders';
+// @import '../utils/functions';
+// @import '../utils/mixins';
+// @import '../utils/placeholders';
 
 .socials {
   @include flex-grid-container(10px, 10px, true);

@@ -1,5 +1,3 @@
-@import '../utils/functions', '../utils/placeholders';
-
 .logo {
   @extend %clean-link;
   font-family: getFontFamily('secondary');
