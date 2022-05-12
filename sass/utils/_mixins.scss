@@ -14,15 +14,17 @@
   $width: 0px,
   $height: 0px,
   $allowResize: false,
-  $quantityInRow: 0
+  $quantityInRow: 0,
+  $max-width: max-content,
+  $min-width: min-content
 ) {
   margin-top: $marginTop;
   margin-left: $marginLeft;
 
   @if $allowResize {
-    flex-basis: calc(100% / ($quantityInRow - 1) - $marginLeft);
-    max-width: max-content;
-    min-width: min-content;
+    flex-basis: calc(100% / $quantityInRow - $marginLeft);
+    max-width: $max-width;
+    min-width: $min-width;
   } @else {
     width: $width;
     height: $height;
