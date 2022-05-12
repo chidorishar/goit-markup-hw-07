@@ -1,5 +1,5 @@
-@import '../utils/functions';
-@import './common';
+@import '../utils/functions', '../utils/placeholders';
+@import './common', './logo';
 
 .header {
   font-weight: getFontWeight('medium');
