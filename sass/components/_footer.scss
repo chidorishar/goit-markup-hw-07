@@ -71,8 +71,9 @@
   @extend %local-subtitle;
 }
 
-.socials__link {
+.footer__socials--link {
   background-color: rgba(getColorFromPalette('primary', 'light'), $alpha: 0.1);
+  color: getColorFromPalette('primary', 'light');
 }
 //#endregion FOLLOW US
 

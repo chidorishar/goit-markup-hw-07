@@ -15,10 +15,13 @@
   height: 100%;
   border-radius: 50%;
 
+  color: getColorFromPalette('icons', 'main');
+
   transition: createTransitionFor('background-color' 'color');
 
   &:hover,
   &:focus {
     background-color: getColorFromPalette('accent', 'light');
+    color: getColorFromPalette('primary', 'light');
   }
 }
