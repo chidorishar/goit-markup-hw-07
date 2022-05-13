@@ -1,4 +1,4 @@
-const filters = document.querySelectorAll('.list-filters .button');
+const filters = document.querySelectorAll('.section-portfolio__button-filter');
 var selectedCards = document.querySelectorAll('.card');
 const modal = document.getElementById('modal');
 const modalControls = {
@@ -14,17 +14,19 @@ Object.keys(modalControls).forEach(key =>
 function onFiltersClick() {
   // unhide previously hidden cards
   selectedCards.forEach(card => card.classList.remove('hidden'));
-  if (this.id != 'all-filter-button') {
+  if (this.id != 'all-button-filter') {
     //select cards by type given by clicked filter
     selectedCards = document.querySelectorAll(
-      '.card:not(.' + this.id.replace('-filter-button', '-card') + ')'
+      '.section-portfolio__card:not(#' + this.id.replace('-button-filter', '-card') + ')'
     );
     //hide selected cards
     selectedCards.forEach(card => card.classList.add('hidden'));
   }
   //set proper style to active filter button
-  document.querySelector('.active-filter').classList.remove('active-filter');
-  this.classList.add('active-filter');
+  document
+    .querySelector('.section-portfolio__button-filter--active')
+    .classList.remove('section-portfolio__button-filter--active');
+  this.classList.add('section-portfolio__button-filter--active');
 }
 
 function toggleModal() {
