@@ -4,11 +4,11 @@
   padding-top: 0;
 }
 
-.section-services__title {
+.section-services__section-title {
   @extend %title;
 }
 
-.section-services__services {
+.section-services__services-list {
   @extend %unmarked-list;
 
   @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin);

@@ -1,6 +1,7 @@
 .socials {
-  @include flex-grid-container(10px, 10px, true);
   @extend %unmarked-list;
+
+  @include flex-grid-container(10px, 10px, true);
 }
 
 .socials__social {

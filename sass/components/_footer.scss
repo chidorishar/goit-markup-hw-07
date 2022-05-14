@@ -60,18 +60,16 @@
 
 //#region FOLLOW US
 .footer__follow-us {
-  margin-right: 93px;
-}
-
-.footer__follow-us {
   @extend %local-wrapper;
+
+  margin-right: 93px;
 }
 
 .footer__follow-subtitle {
   @extend %local-subtitle;
 }
 
-.footer__socials--link {
+.footer__socials-link {
   background-color: rgba(getColorFromPalette('primary', 'light'), $alpha: 0.1);
   color: getColorFromPalette('primary', 'light');
 }

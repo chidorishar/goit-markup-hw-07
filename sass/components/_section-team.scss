@@ -8,11 +8,11 @@
   background-color: getColorFromPalette('background', 'light');
 }
 
-.section-team__title {
+.section-team__section-title {
   @extend %title;
 }
 
-.section-team__team {
+.section-team__team-list {
   @extend %unmarked-list;
 
   @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin);

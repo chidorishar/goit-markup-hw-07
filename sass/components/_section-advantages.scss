@@ -2,17 +2,16 @@
   @extend %section;
 }
 
-.section-advantages__title {
+.section-advantages__section-title {
   @extend %visually-hidden;
 }
 
-.section-advantages__advantages {
-  //   @extend %flex--h-centred;
+.section-advantages__advantages-list {
   @extend %unmarked-list;
+
   @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin, true);
 }
 
-// $itemsDefaultMargin
 .section-advantages__advantage {
   @include flex-grid-item(
     $itemsDefaultMargin,

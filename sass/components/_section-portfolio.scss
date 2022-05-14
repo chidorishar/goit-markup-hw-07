@@ -5,6 +5,10 @@
   padding: 94px 0;
 }
 
+.section-portfolio__section-title {
+  @extend %visually-hidden;
+}
+
 .section-portfolio__filters {
   @extend %unmarked-list;
   @extend %flex--vh-centred;

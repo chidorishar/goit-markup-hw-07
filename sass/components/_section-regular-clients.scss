@@ -1,18 +1,18 @@
-.section-regular-clients {
+.section-clients {
   @extend %section;
 }
 
-.section-regular-clients__title {
+.section-clients__section-title {
   @extend %title;
 }
 
-.section-regular-clients__clients {
+.section-clients__clients-list {
   @extend %unmarked-list;
 
   @include flex-grid-container($itemsDefaultMargin, $itemsDefaultMargin, true);
 }
 
-.section-regular-clients__client {
+.section-clients__client {
   @include flex-grid-item(
     $itemsDefaultMargin,
     $itemsDefaultMargin,
@@ -22,7 +22,7 @@
   );
 }
 
-.section-regular-clients__link {
+.section-clients__link {
   @extend %flex--vh-centred;
 
   height: 92px;
@@ -40,6 +40,6 @@
   }
 }
 
-.section-regular-clients__link {
+.section-clients__icon {
   @extend %icon;
 }

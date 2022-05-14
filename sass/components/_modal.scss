@@ -41,6 +41,7 @@
     transform: translate(-50%, -50%) scale(0.1, 0.1);
 
     pointer-events: none;
+    visibility: hidden;
   }
 }
 
@@ -81,6 +82,7 @@
 
 .modal__request-form {
   @extend %flex--v-centred;
+
   flex-direction: column;
 }
 

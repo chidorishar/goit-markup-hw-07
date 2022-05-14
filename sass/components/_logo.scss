@@ -1,5 +1,6 @@
 .logo {
   @extend %clean-link;
+
   font-family: getFontFamily('secondary');
   font-weight: getFontWeight('bold');
   font-size: 26px;
