@@ -17,7 +17,7 @@ function onFiltersClick() {
   if (this.id != 'all-button-filter') {
     //select cards by type given by clicked filter
     selectedCards = document.querySelectorAll(
-      '.section-portfolio__card:not(#' + this.id.replace('-button-filter', '-card') + ')'
+      '.section-portfolio__card:not([' + this.id.replace('-button-filter', '-card') + '])'
     );
     //hide selected cards
     selectedCards.forEach(card => card.classList.add('hidden'));
